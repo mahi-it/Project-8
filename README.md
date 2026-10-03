@@ -1,4 +1,4 @@
-# Project-3 NumPy Analyzer
+# Project-8 NumPy Analyzer
 
 ### Introduction
 
@@ -84,8 +84,8 @@ The program continues running until the user selects the Exit option.
 
 ### Repository
 
-mahi-it/Project-3
-├── project 3 Numpy Analyzer.py
+mahi-it/Project-8
+├── project 8 Numpy Analyzer.py
 └── README.md
 
 
