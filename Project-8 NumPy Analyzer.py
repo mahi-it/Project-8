@@ -224,7 +224,10 @@ while(True):
                     case 4:
                         second=obj.second_array()
                         if second is not None:
-                            answer=obj.array / second
+                            if np.any(second == 0):
+                             print("Division by zero is not allowed.")
+                            else:
+                             answer=obj.array / second
                             print("\nDivision: ",answer)
                         else:
                             print("Otherwise Division operation will not be performed")
@@ -312,13 +315,49 @@ while(True):
 
 
                     case 3:
-                        value=int(input("Enter the value to find the greater number from that value:"))
-                        mask = obj.array > value
-                        filtered_arr = obj.array[mask]
+                        while(True): 
+                            print("\nChoose a filter condition:")
+                            print("1. Filtering with condition")
+                            print("2. Boolean Mask")
+                            print("3. Multiple Conditions")
+                            print("4. Going back to Main Menu")
 
-                        print("Original Array:", obj.array)
-                        print("Boolean Mask:", mask)
-                        print("Filtered Array:", filtered_arr)
+                            choice = int(input("Enter your choice: "))
+
+                            match choice:
+                                case 1:
+                                    value = int(input("Enter the value: "))
+                                    filtered_arr = obj.array[obj.array > value]
+
+                                    print("\nOriginal Array:", obj.array)
+                                    print("Filtered Array:", filtered_arr)
+
+                                case 2:
+                                    value = int(input("Enter the value: "))
+                                    mask = obj.array > value
+
+                                    print("\nOriginal Array:", obj.array)
+                                    print("Boolean Mask:", mask)
+
+                                case 3:
+                                    value1 = int(input("Enter the minimum value: "))
+                                    value2 = int(input("Enter the maximum value: "))
+
+                                    mask = (obj.array > value1) & (obj.array < value2)
+                                    filtered_arr = obj.array[mask]
+
+                                    print("\nOriginal Array:", obj.array)
+                                    print("Boolean Mask:", mask)
+                                    print("Filtered Array:", filtered_arr)
+
+                                case 4:
+                                    print("Going back to Main Menu")
+                                    break
+
+                                case _:
+                                    print("Invalid choice")
+                        
+                        
                     case 4:
                         print("Moving Back to Main Menu")
                         break
