@@ -2,40 +2,19 @@
 
 ### Introduction
 
-The NumPy Analyzer is a Python menu-driven program designed to perform various operations on NumPy arrays. It allows users to create 1D, 2D, and 3D arrays and perform different array operations such as indexing, slicing, mathematical operations, combining, splitting, searching, sorting, filtering, and statistical analysis.
-The program continues running until the user selects the Exit option.
+The NumPy Analyzer is a Python menu-driven program that allows users to create and perform different operations on 1D, 2D, and 3D NumPy arrays.
 
 ### Features
 
-- Create 1D, 2D, and 3D NumPy arrays.
-- Perform array indexing.
-- Perform array slicing.
-- Perform mathematical operations:
-  - Addition
-  - Subtraction
-  - Multiplication
-  - Division
-- Combine arrays using:
-  - Concatenation
-  - Vertical stacking
-  - Horizontal stacking
-- Split arrays using:
-  - np.array_split()
-  - np.hsplit()
-  - np.vsplit()
-- Search for values and find their indexes.
-- Sort array values.
-- Filter values using Boolean masking.
-- Calculate aggregate and statistical values:
-  - Sum
-  - Mean
-  - Median
-  - Standard Deviation
-  - Variance
-- Validate user input for array operations.
-- Menu-driven interface.
-- Allows multiple operations in one execution.
-- Uses Object-Oriented Programming concepts.
+- Create 1D, 2D, and 3D arrays.
+- Perform indexing and slicing.
+- Perform addition, subtraction, multiplication, and division.
+- Combine and split arrays.
+- Search and sort arrays.
+- Filter arrays using conditions, Boolean masks, and multiple conditions.
+- Perform Boolean indexing.
+- Calculate sum, mean, median, standard deviation, and variance.
+- Menu-driven program using OOP concepts.
 
 ### Core Concepts
 
@@ -43,36 +22,18 @@ The program continues running until the user selects the Exit option.
 
 - NumPy
 - Class and Object
-- Constructor `__init__()`
+- Constructor
 - Private method
 - Class method
 - Static method
 -  loops
-- if-elif-else
 - match-case
+- if-else
 - try-except
-- input()
-- Array indexing
-- Array slicing
-- Array reshaping
-- ndim
-- size
-- shape
-- np.array()
-- np.concatenate()
-- np.vstack()
-- np.hstack()
-- np.array_split()
-- np.hsplit()
-- np.vsplit()
-- np.argwhere()
-- np.sort()
+- Indexing and slicing
 - Boolean masking
-- np.sum()
-- np.mean()
-- np.median()
-- np.std()
-- np.var()
+- Array reshaping
+- NumPy functions
 
 ### Tools & Editor
 
@@ -83,6 +44,7 @@ The program continues running until the user selects the Exit option.
 - GitHub
 
 ### Repository
+
 
 mahi-it/Project-8
 ├── project 8 Numpy Analyzer.py
